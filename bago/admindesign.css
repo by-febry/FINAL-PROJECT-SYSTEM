@@ -1,0 +1,116 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Set a light background color */
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.left-nav h2 {
+    margin: 0;
+    font-size: 24px; /* Increase font size for the heading */
+}
+
+.left-side ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.left-side li {
+    margin-right: 20px;
+}
+
+.left-side a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.left-side a:hover {
+    color: #ffcc00;
+}
+
+.right-nav img {
+    max-width: 100px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #ffcc00;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Logout form styles */
+#logoutForm {
+    text-align: center;
+}
+
+#logoutForm button[type="submit"] {
+    background-color: #dc3545; /* Red color for logout button */
+}
+
+#logoutForm button[type="submit"]:hover {
+    background-color: #c82333; /* Darker red on hover */
+}

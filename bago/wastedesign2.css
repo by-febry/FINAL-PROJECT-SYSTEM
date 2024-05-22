@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
+    background-color: #f4f4f4; /* Set a light background color */
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Center content vertically on the page */
+    position: relative;
+}
+
+form {
+    max-width: 800px; /* Increased width to accommodate all three sections */
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.one,
+.two,
+.three {
+    flex-basis: calc(33.33% - 20px); /* Each section takes one-third of the container */
+    margin-right: 20px; /* Add some spacing between sections */
+}
+
+/* Adjust margin-right for the last section to remove extra spacing */
+.three {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    .one,
+    .two,
+    .three {
+        flex-basis: calc(50% - 20px); /* Each section takes half of the container on smaller screens */
+    }
+}

@@ -1,0 +1,48 @@
+/* Header styles */
+.header {
+    display: flex; /* Display header content as flex */
+    align-items: center; /* Center items vertically */
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #8dc63f;
+    padding: 10px 20px;
+}
+
+.left-nav {
+    flex-grow: 1; /* Allow left-nav to grow and take available space */
+}
+
+.right-nav {
+    margin-left: auto; /* Push right-nav to the right */
+}
+
+/* Left-side styles */
+.left-side {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px; /* Add some margin for spacing */
+}
+
+.left-side ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display list items horizontally */
+}
+
+.left-side li {
+    margin-right: 10px; /* Add spacing between list items */
+}
+
+.left-side li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Adjust other styles as needed */
